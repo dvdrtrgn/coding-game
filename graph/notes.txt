@@ -1,0 +1,56 @@
+I WANT TO BE ABLE TO:
+
+* model pairwise relations between objects
+* speak about graph data
+* derive data thru a syntax
+** simple
+** intuitive
+
+graph part entity
+network Graph
+
+
+PARTS
+
+* blob (vertices, nodes, points)
+** init with one id
+
+* link (edges, arcs, lines)
+** init with two ids (nodes) // links inherently have nodes
+
+
+Graph class
+* getSet() ask for whole set
+
+
+
+
+WISH (things i want to derive)
+
+* calc all distances from a point
+* ask node for distance to another node
+
+add nodes -- derive links?
+add links -- derive node for sure
+
+
+
+UTILS
+
+hashBy() take set and make object by outing a key property
+listBy() util order parts (of type) by property?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
