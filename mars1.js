@@ -10,13 +10,19 @@ for (var i = 0; i < POINTS; i++) {
   var [landX, landY] = RN();
   prerr('xy', [landX, landY]);
 }
-var V = -1;
+
+function sp2pow(sp, adj = 1) {
+  sp = sp / (-10 * adj);
+  sp = Math.min(Math.max(sp, 0), 4);
+  return Math.round(sp);
+}
+
 // game loop
 while (true) {
   var [X, Y, hMps, vMps, fuel, rotate, power] = RN();
   // H/V speed(±m/s) & fuel(liters) & rotation(±90°) & thrust(0–4 Lps)
-
-  var rez = Math.min(((V += 0.24) | 0), 4);
   prerr(['xy', X, Y], [hMps, vMps], ['gas', fuel], [rotate, power]);
-  print('0 ' + rez); // [[rotation] [power]]
+
+  var rez = 0;
+  print('0 ' + sp2pow(vMps)); // [[rotation] [power]]
 }
