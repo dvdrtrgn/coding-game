@@ -12,13 +12,12 @@ function x2alt(x) {
   return rez[1];
 }
 
-function sp2pow(speed, dist, adj = 8.8) {
-  var km = Math.round(dist / 1000);
-  var kx = speed + km * adj;
-  var sq = Math.round(kx / -adj);
-  var sp = Math.min(Math.max(sq, 0), 4);
-  prerr('sp2pow', [speed, dist], [km, kx, sq]);
-  return sp;
+function sp2pow(speed, dist, adj = 9) {
+  var kms = dist / 1000;
+  var mag = Math.round((kms * adj + speed) / -adj);
+  var pow = Math.min(Math.max(mag, 0), 4);
+  prerr('sp2pow', [speed, dist], [mag, pow]);
+  return pow;
 }
 
 // game loop
@@ -32,4 +31,5 @@ while (true) {
 
   var dist = (Y - landY);
   print('0 ' + sp2pow(vMps, dist)); // [[rotation] [power]]
+  //print('0 ' + vMps < -39 ? '4' : '0');
 }
