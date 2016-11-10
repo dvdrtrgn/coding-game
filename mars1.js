@@ -5,24 +5,31 @@ var R = () => readline().split(' ');
 var RN = () => R().map(Number);
 
 // X/Y coordinates used to draw the surface
-var POINTS = RN();
-for (var i = 0; i < POINTS; i++) {
-  var [landX, landY] = RN();
-  prerr('xy', [landX, landY]);
+var POINTS = Array(RN().pop()).fill().map(RN);
+
+function x2alt(x) {
+  var rez = POINTS.reduce((a, b) => (x > a[0]) ? a : b);
+  return rez[1];
 }
 
-function sp2pow(sp, adj = 1) {
-  sp = sp / (-10 * adj);
-  sp = Math.min(Math.max(sp, 0), 4);
-  return Math.round(sp);
+function sp2pow(speed, dist, adj = 8.8) {
+  var km = Math.round(dist / 1000);
+  var kx = speed + km * adj;
+  var sq = Math.round(kx / -adj);
+  var sp = Math.min(Math.max(sq, 0), 4);
+  prerr('sp2pow', [speed, dist], [km, kx, sq]);
+  return sp;
 }
 
 // game loop
+landY = '';
+
 while (true) {
   var [X, Y, hMps, vMps, fuel, rotate, power] = RN();
   // H/V speed(±m/s) & fuel(liters) & rotation(±90°) & thrust(0–4 Lps)
   prerr(['xy', X, Y], [hMps, vMps], ['gas', fuel], [rotate, power]);
+  landY = landY || x2alt(X);
 
-  var rez = 0;
-  print('0 ' + sp2pow(vMps)); // [[rotation] [power]]
+  var dist = (Y - landY);
+  print('0 ' + sp2pow(vMps, dist)); // [[rotation] [power]]
 }
