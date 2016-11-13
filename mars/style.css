@@ -1,0 +1,48 @@
+html, body {
+  background-color: #111;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+#Space {
+  background-color: #123;
+  width: 70rem;
+  height: 50rem;
+  margin: auto;
+  border: 1px solid gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#Craft {
+  position: absolute;
+  top: 1rem;
+  left: 34.5rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 1;
+  /*transform: rotate(33deg);*/
+  background-image: url('pod.png');
+  background-size: contain;
+}
+.ani {
+  transition: top 0.1s linear 0s;
+}
+#Craft::after {
+  content: '';
+  position: absolute;
+  background-color: #600;
+  width: 0.3rem;
+  display: block;
+  height: 0.5rem;
+  top: 2.2rem;
+  left: 1.4rem;
+  z-index: 0;
+}
