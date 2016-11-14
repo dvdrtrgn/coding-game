@@ -1,3 +1,6 @@
+var W = window;
+var C = W.console;
+
 $.fn.setCenter = function (x, y) {
   var me = $(this);
   me.css({
@@ -22,39 +25,58 @@ function makeCoord(x, y) {
   return obj;
 }
 
+function makeTimer(fn, ms) {
+  var start = Date.now();
+  var token;
+  var Api = {
+    read: () => Date.now() - start,
+    set: function (fn, ms) {
+      start = Date.now();
+      window.clearInterval(token);
+      token = window.setInterval(fn, ms);
+    },
+    clear: function () {
+      window.clearInterval(token);
+    },
+  };
+  if (fn && ms) Api.set(fn, ms);
+  return Api;
+}
+
 var Craft = (function () {
-  var W = window;
-  var C = W.console;
   var box = $('#Space');
   var rok = $('#Craft');
-  var timer;
+  var clock = makeTimer();
   var height;
-  var motion;
+  var avgvel = 16;
+  var times;
   var coord;
-  var start;
   var ground = box.height() - rok.height() / 2.5;
 
+  var getDist = (t, av) => Math.pow(t, 2) * (av || avgvel);
+  var getDiff = (t1, t2) => getDist(t2 || t1 + 1) - getDist(t1);
+
   function drop() {
-    C.log(Date.now() - start, height);
+    times++;
     rok.setCenter(coord.x, height).addClass('ani');
-    motion += 3;
-    height = Math.min(height + motion, ground);
+    height = Math.min(height + getDiff(times), ground);
     if (height >= ground) {
-      W.clearInterval(timer);
+      clock.clear();
       rok.setCenter(coord.x, height);
     }
+    C.log(clock.read(), height, times);
   }
+
   function thrust() {
-    motion -= 4;
+    times -= 4;
   }
   box.on('click', function (evt) {
-    clearInterval(timer);
+    if (evt.delegateTarget !== evt.target) return;
     coord = makeCoord(evt);
     rok.removeClass('ani').setCenter(coord.x, coord.y);
     height = coord.y;
-    motion = 0;
-    start = Date.now();
-    timer = W.setInterval(drop, 100);
+    times = -1;
+    clock.set(drop, 100);
   });
 
   $(W).on('keypress', thrust);
