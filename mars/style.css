@@ -10,6 +10,7 @@ html, body {
 
 #Space {
   background-color: #123;
+  cursor: crosshair;
   width: 70rem;
   height: 50rem;
   margin: auto;
