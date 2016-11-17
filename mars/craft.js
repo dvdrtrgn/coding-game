@@ -1,6 +1,8 @@
 var W = window;
 var C = W.console;
-var avgvel = 1.6;
+var gravity = 32;
+var secseg = 10;
+var avgvel = gravity / 2 / secseg;
 var getDist = (t, av) => Math.pow(t, 2) * (av || avgvel);
 var getDiff = (t1, t2) => getDist(t2 || t1 + 1) - getDist(t1);
 var setDefer = (fn) => W.setTimeout(fn, 1);
@@ -69,8 +71,8 @@ var Craft = (function () {
     }
     rok.setCenter(coord.x, lower);
     lower += getDiff(clock.tick());
-    lower = Math.min(lower, ground) | 0;
-    C.log(clock.read(), lower, clock.gain());
+    lower = Math.min(lower, ground);
+    C.log(clock.read(), lower | 0, clock.gain());
   }
 
   function thrusting() {
@@ -81,7 +83,7 @@ var Craft = (function () {
     if (evt.delegateTarget !== evt.target) throw 'click!';
     coord = makeCoord(evt);
     lower = coord.y;
-    clock.set(dropping, 100);
+    clock.set(dropping, 1000 / secseg);
     rok.setCenter(coord.x, coord.y).setAnima(1);
   });
 
