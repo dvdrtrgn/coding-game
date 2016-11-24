@@ -10,14 +10,6 @@ function findFlats(where) {
   return arr;
 }
 
-function sp2pow(sp, dist, adj = 0.1) {
-  var kms = dist / 1000;
-  var mag = Math.round((kms * adj + sp) / -adj);
-  var pow = Math.min(Math.max(mag, 0), 4);
-  //prerr('sp2pow', [sp, dist], [mag, pow]);
-  return pow;
-}
-
 var mid = (a, b) => (a + b) / 2;
 var clip = (n, a, z) => Math.min(z, Math.max(a, n));
 var blot = (n, m) => (Math.abs(n) < m) ? 0 : n;
@@ -79,7 +71,7 @@ while (true) {
 
   prerr(['Altitude', Altitude], ['Landing', Landing], ['Target', Target]);
 
-  var pow = sp2pow(vMps, (Y - Altitude));
+  var pow = (vMps/-6) | 0;
   var rot = deterAng(Target, X, hMps);
 
   print(rot + ' ' + pow); // [[rotation] [power]]
