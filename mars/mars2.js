@@ -41,8 +41,7 @@ function getDistance(x, flat) {
 
 var DIST = 0;
 
-function deterAng(goal, pos, sp) {
-  var off = goal - pos;
+function deterAng(off, pos, sp) {
   var abs = Math.abs(sp);
   var deg = clip(-off / abs, -45, 45) | 0;
   var sos = clip(sp * abs, -45, 45) | 0;
@@ -58,6 +57,7 @@ function deterAng(goal, pos, sp) {
 var Altitude;
 var Landing;
 var Target;
+var Offby;
 
 while (true) {
   var [X, Y, hMps, vMps, fuel, rotate, power] = RN();
@@ -66,11 +66,12 @@ while (true) {
   Altitude = Altitude || x2alt(X);
   Landing = Landing || findFlatNear(X);
   Target = getDistance(X, Landing);
+  Offby = Target - X;
 
-  prerr(['Altitude', Altitude], ['Landing', Landing], ['Target', Target]);
+  prerr(['Alt', Altitude], ['Flat', Landing], ['Targ', Target], ['Off', Offby]);
 
   var pow = clip(vMps / -5, 0, 4) | 0;
-  var rot = deterAng(Target, X, hMps);
+  var rot = deterAng(Offby, X, hMps);
 
   print(rot + ' ' + pow); // [[rotation] [power]]
 }
