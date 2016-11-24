@@ -74,22 +74,3 @@ while (true) {
 
   print(rot + ' ' + pow); // [[rotation] [power]]
 }
-
-
-/*
-
-
-
-first get to the proper x (unless the target is simple)
-maintain y (more for the higher)
-make it easy to coast to, center
-calculate y loss from angle
-get up to speed and coast (do not rush to stop)
-fire retro in advance
-plan for initial speeds take speed from moment to moment
-  ask, am i going in the right direction
-  calculate time to stop like gravity in reverse
-  equate thrust to inertia and time
-  thrust is acceleration
-  the time curve should be comparable
-  run thru curve normalizer forward and reverse
