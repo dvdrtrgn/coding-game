@@ -38,21 +38,15 @@ function getDistance(x, flat) {
 var DIST = 0;
 
 function deterAng(goal, pos, sp) {
-  DIST = DIST || goal - pos;
-  var sig = DIST < 0 ? -1 : 1;
-  var mid = DIST / (2 - Math.abs(sp / 123)) | 0;
-  var ang;
   var off = goal - pos;
+  var abs = Math.abs(sp);
+  var deg = clip(-off / abs, -45, 45) | 0;
+  var sos = clip(sp * abs, -45, 45) | 0;
+  var rot = deg ? deg + sp : sos;
 
-  if (off * sig > mid * sig) {
-    ang = -30 * sig;
-    printErr('not yet');
-  } else {
-    ang = sp;
-  }
-  ang = clip(ang, -45, 45);
-  prerr(['DIST', DIST], ['off', off], ['mid', mid], ['sig', sig]);
-  return blot(ang, 2);
+  prerr(['off', off], ['deg', deg], ['sos', sos], ['rot', rot]);
+
+  return clip(rot, -45, 45) | 0;
 }
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -67,11 +61,11 @@ while (true) {
 
   Altitude = Altitude || x2alt(X);
   Landing = Landing || findFlatNear(X);
-  Target = Target || getDistance(X);
+  Target = getDistance(X, Landing);
 
   prerr(['Altitude', Altitude], ['Landing', Landing], ['Target', Target]);
 
-  var pow = (vMps/-6) | 0;
+  var pow = clip(vMps / -5, 0, 4) | 0;
   var rot = deterAng(Target, X, hMps);
 
   print(rot + ' ' + pow); // [[rotation] [power]]
