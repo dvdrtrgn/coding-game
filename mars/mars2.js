@@ -8,7 +8,7 @@ var dual = (num) => num > 0 ? [-num, num] : [num, -num];
 var gate = (num, min) => (Math.abs(num) < min) ? 0 : num;
 var bound = (num, abs) => (abs = dual(abs)) && clip(num, abs[0], abs[1]);
 var round = (num) => Math.round(num);
-var sign = (num) => Math.sign(num);
+var signify = (num, fact) => Math.sign(num) * (fact || 1);
 
 function prerr(...arr) {
   printErr(arr.map(a => a.join && a.join(':') || a).join(' | '));
@@ -61,32 +61,20 @@ function findNearZone(xpos, zones) {
 }
 
 function calcThrust(speed) {
-  return clip(speed / -5, 0, 4) | 0;
+  return clip(speed / -9, 0, 4) | 0;
 }
 
-// adjust angle according to how far from x1 and x2
-function calcAngle(off, sp) {
-  var abs = Math.abs(sp);
-  var deg = bound(-off / abs, 45) | 0;
-  var sos = bound(sp * abs, 15) | 0;
-  var rot = deg ? deg + sp : sos;
+function calcStop(sp, msp) {
+  var mod, rot, pow = 4;
 
-  prerr(['off', off], ['deg', deg], ['sos', sos], ['rot', rot]);
+  rot = bound(Math.pow(msp.x, 3), 30);
+  mod = Math.log10(Math.pow(msp.y, 2));
 
-  return bound(rot, 25) | 0;
-}
+  if (mod > 1) rot /= mod;
+  if (msp.y > 10) pow--;
+  if (sp.x * sp.x < 10) pow = calcThrust(sp.y);
 
-function calcStop(sp) {
-  var rot, pow = 4, mod;
-
-    rot = bound(Math.pow(sp.x, 3), 30);
-    mod = Math.log10(Math.pow(sp.y, 2));
-
-    printErr(mod);
-    if (mod > 1) rot /= mod;
-    if (sp.y > 0) pow--;
-
-  return round(rot)+ ' ' + round(pow);
+  return round(rot) + ' ' + round(pow);
 }
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -106,16 +94,10 @@ while (true) {
   GO_TO.updateTo(getDistance(X, LZ.range), LZ.alt);
   DISTS.updateTo(GO_TO.x - X, GO_TO.y - Y);
   SPEED.updateTo(Xsp, Ysp);
-  MODSP.updateTo(sign(DISTS.x) * 30, sign(DISTS.y) * 10);
+  MODSP.updateTo(signify(DISTS.x, 30), signify(DISTS.y, 10));
   ALTER.updateTo(SPEED.x - MODSP.x, SPEED.y - MODSP.y);
 
-  prerr('XYs', GO_TO, DISTS, SPEED, MODSP, ALTER);
+  prerr('XYs', GO_TO, DISTS, SPEED, ALTER);
 
-  var pow = calcThrust(Ysp);
-  var rot = calcAngle(DISTS.x, Xsp);
-  var rez = rot + ' ' + pow;
-
-  rez = calcStop(SPEED, MODSP, ALTER);
-
-  print(rez); // [[rotation] [power]]
+  print(calcStop(SPEED, ALTER)); // [[rotation] [power]]
 }
