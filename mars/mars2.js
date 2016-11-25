@@ -12,6 +12,14 @@ function prerr(...arr) {
   printErr(arr.map(a => a.join && a.join(':') || a).join(' | '));
 }
 
+function makePoint(x, y, nom) {
+  var obj = {
+    x, y
+  };
+  obj.toString = () => `${nom||''}: [${obj.x}, ${obj.y}]`;
+  obj.updateTo = (a, b) => (obj.x = a, obj.y = b, obj);
+  return obj;
+}
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // init vars
 var R = () => readline().split(' ');
@@ -64,26 +72,23 @@ function deterAng(off, pos, sp) {
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // game loop
 var LZ;
-var Altitude;
-var Landing;
-var Target;
-var Offby;
-var DISTS = [0, 0];
+var DISTS = makePoint(0, 0, 'Distance');
+var GO_TO = makePoint(0, 0, 'Go to');
+var SPEED = makePoint(0, 0, 'Speeds');
 
 while (true) {
   var [X, Y, Xsp, Ysp, fuel, rotate, power] = RN();
   // H/V speed(±m/s) & fuel(liters) & rotation(±90°) & thrust(0–4 Lps)
   LZ = findNearZone(X, ZONES);
-  Altitude = LZ.alt;
-  Landing = LZ.range;
-  Target = getDistance(X, Landing);
-  Offby = Target - X;
-  DISTS = [Offby, Altitude - Y];
 
-  prerr(['Target X/Y', Target, Altitude], ['Dists', DISTS]);
+  GO_TO.updateTo(getDistance(X, LZ.range), LZ.alt);
+  DISTS.updateTo(GO_TO.x - X, GO_TO.y - Y);
+  SPEED.updateTo(Xsp, Ysp);
+
+  prerr('XYs', GO_TO, SPEED, DISTS);
 
   var pow = clip(Ysp / -5, 0, 4) | 0;
-  var rot = deterAng(Offby, X, Xsp);
+  var rot = deterAng(DISTS.x, X, Xsp);
 
   print(rot + ' ' + pow); // [[rotation] [power]]
 }
