@@ -7,6 +7,7 @@ var clip = (num, lo, hi) => Math.min(hi, Math.max(lo, num));
 var dual = (num) => num > 0 ? [-num, num] : [num, -num];
 var gate = (num, min) => (Math.abs(num) < min) ? 0 : num;
 var bound = (num, abs) => (abs = dual(abs)) && clip(num, abs[0], abs[1]);
+var round = (num) => Math.round(num);
 
 function prerr(...arr) {
   printErr(arr.map(a => a.join && a.join(':') || a).join(' | '));
@@ -74,6 +75,19 @@ function calcAngle(off, sp) {
   return bound(rot, 25) | 0;
 }
 
+function calcStop(sp) {
+  var rot, pow = 4, mod;
+
+    rot = bound(Math.pow(sp.x, 3), 30);
+    mod = Math.log10(Math.pow(sp.y, 2));
+
+    printErr(mod);
+    if (mod > 1) rot /= mod;
+    if (sp.y > 0) pow--;
+
+  return round(rot)+ ' ' + round(pow);
+}
+
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // game loop
 var LZ;
@@ -94,6 +108,9 @@ while (true) {
 
   var pow = calcThrust(Ysp);
   var rot = calcAngle(DISTS.x, Xsp);
+  var rez = rot + ' ' + pow;
 
-  print(rot + ' ' + pow); // [[rotation] [power]]
+  rez = calcStop(SPEED);
+
+  print(rez); // [[rotation] [power]]
 }
