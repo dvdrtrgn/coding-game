@@ -8,6 +8,7 @@ var dual = (num) => num > 0 ? [-num, num] : [num, -num];
 var gate = (num, min) => (Math.abs(num) < min) ? 0 : num;
 var bound = (num, abs) => (abs = dual(abs)) && clip(num, abs[0], abs[1]);
 var round = (num) => Math.round(num);
+var sign = (num) => Math.sign(num);
 
 function prerr(...arr) {
   printErr(arr.map(a => a.join && a.join(':') || a).join(' | '));
@@ -94,6 +95,8 @@ var LZ;
 var DISTS = makePoint(0, 0, 'Distance');
 var GO_TO = makePoint(0, 0, 'Go to');
 var SPEED = makePoint(0, 0, 'Speeds');
+var MODSP = makePoint(0, 0, 'Modify');
+var ALTER = makePoint(0, 0, 'Alter');
 
 while (true) {
   var [X, Y, Xsp, Ysp, fuel, rotate, power] = RN();
@@ -103,14 +106,16 @@ while (true) {
   GO_TO.updateTo(getDistance(X, LZ.range), LZ.alt);
   DISTS.updateTo(GO_TO.x - X, GO_TO.y - Y);
   SPEED.updateTo(Xsp, Ysp);
+  MODSP.updateTo(sign(DISTS.x) * 30, sign(DISTS.y) * 10);
+  ALTER.updateTo(SPEED.x - MODSP.x, SPEED.y - MODSP.y);
 
-  prerr('XYs', GO_TO, SPEED, DISTS);
+  prerr('XYs', GO_TO, DISTS, SPEED, MODSP, ALTER);
 
   var pow = calcThrust(Ysp);
   var rot = calcAngle(DISTS.x, Xsp);
   var rez = rot + ' ' + pow;
 
-  rez = calcStop(SPEED);
+  rez = calcStop(SPEED, MODSP, ALTER);
 
   print(rez); // [[rotation] [power]]
 }
