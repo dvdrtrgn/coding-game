@@ -2,9 +2,11 @@ var avgvel = 3.711 / 2 / 10;
 var getDist = (time) => Math.pow(time, 2) * avgvel;
 var getDiff = (t1, t2) => getDist(t2 || t1 + 1) - getDist(t1);
 
-var mid = (a, b) => (a + b) / 2;
-var clip = (n, a, z) => Math.min(z, Math.max(a, n));
-var blot = (n, m) => (Math.abs(n) < m) ? 0 : n;
+var mid = (n1, n2) => (n1 + n2) / 2;
+var clip = (num, lo, hi) => Math.min(hi, Math.max(lo, num));
+var dual = (num) => num > 0 ? [-num, num] : [num, -num];
+var gate = (num, min) => (Math.abs(num) < min) ? 0 : num;
+var bound = (num, abs) => (abs = dual(abs)) && clip(num, abs[0], abs[1]);
 
 function prerr(...arr) {
   printErr(arr.map(a => a.join && a.join(':') || a).join(' | '));
@@ -50,13 +52,13 @@ function findNearZone(xpos, zones) {
 // adjust angle according to how far from x1 and x2
 function deterAng(off, pos, sp) {
   var abs = Math.abs(sp);
-  var deg = clip(-off / abs, -45, 45) | 0;
-  var sos = clip(sp * abs, -45, 45) | 0;
+  var deg = bound(-off / abs, 45) | 0;
+  var sos = bound(sp * abs, 15) | 0;
   var rot = deg ? deg + sp : sos;
 
   prerr(['off', off], ['deg', deg], ['sos', sos], ['rot', rot]);
 
-  return clip(rot, -45, 45) | 0;
+  return bound(rot, 25) | 0;
 }
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
