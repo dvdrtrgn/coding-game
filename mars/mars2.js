@@ -39,11 +39,12 @@ function findZones(xys) {
 // X/Y coordinates used to draw the surface
 var POINTS = Array(RN().pop()).fill().map(RN);
 var ZONES = findZones(POINTS);
-printErr(POINTS, '\n zones ', ZONES);
+prerr(POINTS, '\nzones', ZONES);
 
 function getDistance(x, flat) {
-  if (x < flat[0]) return flat[0] + 100;
-  if (x > flat[1]) return flat[1] - 100;
+  var margin = 100;
+  if (x < flat[0]) return flat[0] + margin;
+  if (x > flat[1]) return flat[1] - margin;
   return x; // mid(flat[0], flat[1]);
 }
 
@@ -57,8 +58,12 @@ function findNearZone(xpos, zones) {
   };
 }
 
+function calcThrust(speed) {
+  return clip(speed / -5, 0, 4) | 0;
+}
+
 // adjust angle according to how far from x1 and x2
-function deterAng(off, pos, sp) {
+function calcAngle(off, sp) {
   var abs = Math.abs(sp);
   var deg = bound(-off / abs, 45) | 0;
   var sos = bound(sp * abs, 15) | 0;
@@ -87,8 +92,8 @@ while (true) {
 
   prerr('XYs', GO_TO, SPEED, DISTS);
 
-  var pow = clip(Ysp / -5, 0, 4) | 0;
-  var rot = deterAng(DISTS.x, X, Xsp);
+  var pow = calcThrust(Ysp);
+  var rot = calcAngle(DISTS.x, Xsp);
 
   print(rot + ' ' + pow); // [[rotation] [power]]
 }
