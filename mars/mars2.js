@@ -44,7 +44,7 @@ var ZONES = findZones(POINTS);
 prerr(POINTS, '\nzones', ZONES);
 
 function getDistance(x, flat) {
-  var margin = 100;
+  var margin = 10;
   if (x < flat[0]) return flat[0] + margin;
   if (x > flat[1]) return flat[1] - margin;
   return x; // mid(flat[0], flat[1]);
@@ -67,12 +67,12 @@ function calcThrust(speed) {
 function calcStop(sp, msp) {
   var mod, rot, pow = 4;
 
-  rot = bound(Math.pow(msp.x, 3), 30);
+  rot = bound(Math.pow(msp.x, 5), 45);
   mod = Math.log10(Math.pow(msp.y, 2));
 
   if (mod > 1) rot /= mod;
+  if (Math.pow(sp.x, 2) < 10) pow = calcThrust(sp.y);
   if (msp.y > 10) pow--;
-  if (sp.x * sp.x < 10) pow = calcThrust(sp.y);
 
   return round(rot) + ' ' + round(pow);
 }
@@ -94,10 +94,10 @@ while (true) {
   GO_TO.updateTo(getDistance(X, LZ.range), LZ.alt);
   DISTS.updateTo(GO_TO.x - X, GO_TO.y - Y);
   SPEED.updateTo(Xsp, Ysp);
-  MODSP.updateTo(signify(DISTS.x, 30), signify(DISTS.y, 10));
+  MODSP.updateTo(signify(DISTS.x, 40), signify(DISTS.y, 10));
   ALTER.updateTo(SPEED.x - MODSP.x, SPEED.y - MODSP.y);
 
-  prerr('XYs', GO_TO, DISTS, SPEED, ALTER);
+  prerr(GO_TO, DISTS, SPEED, ALTER);
 
   print(calcStop(SPEED, ALTER)); // [[rotation] [power]]
 }
