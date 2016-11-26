@@ -1,4 +1,10 @@
 //
+function dump(root, meth) {
+  var obj = (meth ? root[meth] : root);
+  var fun = (typeof obj === 'function');
+  console.info([meth, fun ? obj() : obj]);
+}
+
 function makeNode(name, parent) {
   var children = []
   var obj = {
@@ -11,13 +17,11 @@ function makeNode(name, parent) {
       [name]: obj
     }),
     toString: function () {
-      var arr = [name, '@', this.getDepth()];
-      return arr.join(' ');
+      var arr = [name, ' @', obj.getDepth(), '+[', obj.listChildren(), ']'];
+      return arr.join('');
     },
-    getDepth: function () {
-      var depth = 0,
-        parent = this;
-      while (parent && (parent = parent.getParent())) depth++;
+    getDepth: function (depth = 0, parent = obj) {
+      while (parent = parent.getParent()) depth++;
       return depth;
     },
   };
@@ -35,9 +39,9 @@ function testParent() {
 }
 
 var par = testParent();
-console.log(par);
-console.log(par.valueOf());
-console.log(par.toString());
-console.log(par.getId());
-console.log(par.getChildren());
-console.log(par.listChildren());
+dump(par);
+dump(par, 'valueOf');
+dump(par, 'toString');
+dump(par, 'getId');
+dump(par, 'getChildren');
+dump(par, 'listChildren');
