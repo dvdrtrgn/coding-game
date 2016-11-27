@@ -1,23 +1,7 @@
-var Api = (function () {
-  var DATA, LIST, MAX, LOG;
+var Reach = (function () {
+  var Api, DATA, LIST, MAX, LOG;
 
-  function init(data) {
-    DATA = data ? data.slice() : [];
-    LOG = [];
-    LIST = Array(DATA.length + 1).fill(1);
-    MAX = xsrList(0);
-  }
-
-  function sort() {
-    return DATA.sort((a, b) => parseInt(a) - parseInt(b));
-  }
-
-  function xsrMax(num) {
-    num = Math.max(MAX.get(), num || 1);
-    return MAX.set(num);
-  }
-
-  function xsrList(num) {
+  function makeXsr(num) {
     return {
       get: () => LIST[num],
       set: (val) => LIST[num] = val,
@@ -26,46 +10,53 @@ var Api = (function () {
 
   function process(par, kid) {
     LOG.push(par + ' ' + kid);
-    var depth;
-    par = xsrList(par);
-    kid = xsrList(kid);
-    depth = par.get() + 1;
-    xsrMax(kid.set(depth));
+    [par, kid] = [makeXsr(par), makeXsr(kid)];
+
+    var depth = par.get() + 1;
+    updateMax(kid.set(depth));
     return depth;
   }
 
-  var api = {
-    _: () => LIST,
-    max: xsrMax,
-    xsr: xsrList,
+  const processString = (str) => process.apply(0, str.split(' '));
+  const sort = (arr) => arr.sort((a, b) => parseInt(a) - parseInt(b));
+  const updateMax = (num) => MAX.set(Math.max(MAX.get(), num || 1));
+
+  function proc(data) {
+    DATA = data ? data.slice() : (DATA || []);
+    LOG = [];
+    LIST = Array(DATA.length + 1).fill(1);
+    MAX = makeXsr(0);
+    DATA.map(processString);
+  }
+
+  Api = {
+    'API': 'Reach',
+    readLog: () => LOG,
+    readList: () => LIST,
     sortedLog: () => sort(LOG),
     sortedData: () => sort(DATA),
     sortedDepth: () => sort(LIST),
-    read: (num) => LIST[num],
-    proc: (str) => process.apply(0, str.split(' ')),
-    procData: () => DATA.map(api.proc),
-    calc: () => api.max() / 2 | 0,
-    dump: () => LOG,
     get length() {
-      return DATA.length - 1;
+      return DATA.length;
     },
-    init: init,
+    get depth() {
+      return updateMax();
+    },
+    proc: proc,
   };
-  return api;
+
+  return Api;
 }());
 
 function test(data) {
-  var rez;
-  Api.init(data);
-  Api.procData();
-  rez = Api.calc();
-  console.warn(Api, rez);
-  return rez;
+  Reach.proc(data);
+  console.info(Reach);
+  return [Reach.depth, Reach.length].join('/');
 }
 
 var t1 = ['1 2', '2 3', '3 4', '3 7', '4 5', '4 6', '7 8'];
-var t2 = ['1 2', '2 3', '3 4', '3 7', '4 5', '4 6', '7 8'];
-var t3 = ['1 2', '2 3', '3 4', '4 5', '5 6', '7 7', '7 8'];
+var t2 = ['1 2', '2 3', '2 4', '3 5', '3 6', '4 7', '4 8'];
+var t3 = ['1 2', '2 3', '3 4', '4 5', '5 6', '6 7', '7 8'];
 
 var t4 = ['0 1', '0 8', '0 15', '1 2', '1 5', '2 3', '2 4', '5 6', '5 7', '8 9', '8 12', '9 10', '9 11',
 '12 13', '12 14', '15 16', '15 19', '16 17', '16 18', '19 20', '19 21'];
