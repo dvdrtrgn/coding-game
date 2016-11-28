@@ -12,6 +12,7 @@ function makeNode(name, parent) {
     name: name,
     getId: () => name,
     getParent: () => parent,
+    setParent: (obj) => parent = obj,
     addChild: (node) => children.push(node),
     getChildren: () => children.slice(),
     getTop: (parent = obj) => {
@@ -54,4 +55,24 @@ function testParent() {
   return a;
 }
 
-var par = testParent();
+var IDX;
+
+function handlePair(par, kid) {
+  par = IDX[par] = (IDX[par] || makeNode(par));
+  kid = IDX[kid] = (IDX[kid] || makeNode(kid));
+  par.addChild(kid);
+  kid.setParent(par);
+}
+
+function testLoad(arr) {
+  IDX = [];
+  arr.forEach(function (str) {
+    [par, kid] = str.split(' ');
+    handlePair(par, kid);
+  });
+
+  return IDX;
+}
+
+// var par = testParent();
+var x = testLoad(['1 2', '2 3', '3 4', '3 7', '4 5', '4 6', '7 8']);
