@@ -21,12 +21,13 @@ var Reach = (function () {
   const sort = (arr) => arr.sort((a, b) => parseInt(a) - parseInt(b));
   const updateMax = (num) => MAX.set(Math.max(MAX.get(), num || 1));
 
-  function proc(data) {
+  function init(data) {
     DATA = data ? data.slice() : (DATA || []);
     LOG = [];
     LIST = Array(DATA.length + 1).fill(1);
     MAX = makeXsr(0);
     DATA.map(processString);
+    return Api;
   }
 
   Api = {
@@ -36,20 +37,33 @@ var Reach = (function () {
     sortedLog: () => sort(LOG),
     sortedData: () => sort(DATA),
     sortedDepth: () => sort(LIST),
+    init: init,
     get length() {
       return DATA.length;
     },
     get depth() {
-      return updateMax();
+      return (updateMax() / 2) | 0;
     },
-    proc: proc,
   };
 
   return Api;
 }());
 
+/*
+
+var n = parseInt(readline()); // the number of adjacency relations
+var DAT = [];
+for (var i = 0; i < n; i++) {
+  DAT.push(readline());
+}
+
+print(Reach.init(DAT).depth); // minimum steps to propagate the ad
+printErr(Reach.readLog());
+
+/*/
+
 function test(data) {
-  Reach.proc(data);
+  Reach.init(data);
   console.info(Reach);
   return [Reach.depth, Reach.length].join('/');
 }
@@ -85,13 +99,3 @@ var t5 = ['171 26', '187 151', '118 176', '53 52', '129 33', '34 86', '13 1', '1
 '86 99', '78 96', '20 104'];
 
 [t1, t2, t3, t4, t5].map(test);
-
-
-/*
-
-
-
-
-
-
-*/
