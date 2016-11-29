@@ -6,51 +6,55 @@ function dump(root, meth) {
   console.info([root.getId(), meth, out, out + '']);
 }
 
-function makeNode(name, parent) {
-  var children = []
-  var node = {
+function makeNode(name, parent, children = []) {
+  const TAB = '\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t';
+  var self = {
     name: name,
     get _array() {
-      return node.getChildren().map((obj) => obj._array);
+      return [name].concat(children.map((obj) => obj._array));
     },
     get _children() {
-      return node.getChildren();
+      return self.getChildren();
     },
     get _parent() {
       return parent;
     },
-    add: function (kid) {
-      node.addChild(kid);
-      kid.setParent(node);
+    get _string() {
+      return self.toString();
     },
-    getId: () => name,
+    add: function (kid) {
+      self.addChild(kid);
+      kid.setParent(self);
+    },
+    getId: () => self.name = name,
     getParent: () => parent,
-    setParent: (obj) => (obj !== node) && (parent = obj),
+    setParent: (obj) => (obj !== self) && (parent = obj),
     addChild: (obj) => children.push(obj),
     getChildren: () => children.slice(),
-    getTop: (parent = node) => {
+    getTop: (parent = self) => {
       while (parent.getParent()) parent = parent.getParent();
       return parent;
     },
     listChildren: () => {
       var out = children.map(o => o.toString());
-      return out.length ? `+[${out}]` : '';
+      return out.length ? `${out.join('')}` : '';
     },
     valueOf: () => ({
-      [name]: node
+      [name]: self,
     }),
     toString: function () {
-      return `«${name}»@${node.getDepth()} ${node.listChildren()}`;
+      var indent = TAB.slice(0, 1 + self.getDepth());
+      return `${indent}${name}${self.listChildren()}`;
     },
-    getDepth: function (depth = 0, parent = node) {
+    getDepth: function (depth = 0, parent = self) {
       while (parent = parent.getParent()) depth++;
       return depth;
     },
   };
   if (parent) {
-    parent.addChild(node);
+    parent.addChild(self);
   }
-  return node;
+  return self;
 };
 
 function testParent() {
@@ -67,22 +71,20 @@ function testParent() {
   return a;
 }
 
-var IDX;
-
-function handlePair(par, kid) {
-  par = IDX[par] = (IDX[par] || makeNode(par));
-  kid = IDX[kid] = (IDX[kid] || makeNode(kid));
-  par.add(kid);
-}
-
 function testLoad(arr) {
-  IDX = [];
-  arr.forEach(function (str) {
+  var par, kid, IDX = [];
+  let pad = (str) => str.replace(' ', '.000000000000'.slice(0, 12 - str.length));
+  let sort = (arr) => arr.sort((a, b) => {
+    return parseFloat(pad(a)) - parseFloat(pad(b));
+  });
+  sort(arr).forEach(function (str) {
     [par, kid] = str.split(' ');
-    handlePair(par, kid);
+    par = IDX[par] = (IDX[par] || makeNode(par));
+    kid = IDX[kid] = (IDX[kid] || makeNode(kid));
+    par.add(kid);
   });
 
-  return IDX[1].getTop();
+  return par.getTop();
 }
 
 // var par = testParent();
@@ -108,3 +110,7 @@ var x = testLoad(['171 26', '187 151', '118 176', '53 52', '129 33', '34 86', '1
 '75 144', '147 88', '134 165', '144 87', '186 6', '42 5', '86 133', '72 118', '44 95',
 '16 66', '184 128', '40 174', '184 119', '156 65', '12 81', '136 82', '144 76', '186 168',
 '86 99', '78 96', '20 104']);
+
+
+
+//
