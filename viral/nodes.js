@@ -57,38 +57,32 @@ function makeNode(name, parent, children = []) {
   return self;
 };
 
-function testParent() {
-  var a = makeNode('foo');
-  var b = makeNode('bar', a);
-  var c = makeNode('baz', b);
-  dump(a);
-  dump(a, 'getId');
-  dump(a, 'valueOf');
-  dump(a, 'toString');
-  dump(a, 'getChildren');
-  dump(b, 'listChildren');
-  dump(c, 'getTop');
-  return a;
-}
-
 function testLoad(arr) {
   var par, kid, IDX = [];
+
   let pad = (str) => str.replace(' ', '.000000000000'.slice(0, 12 - str.length));
   let sort = (arr) => arr.sort((a, b) => {
     return parseFloat(pad(a)) - parseFloat(pad(b));
   });
+
   sort(arr).forEach(function (str) {
     [par, kid] = str.split(' ');
     par = IDX[par] = (IDX[par] || makeNode(par));
     kid = IDX[kid] = (IDX[kid] || makeNode(kid));
     par.add(kid);
   });
-
+  // console.log(IDX.map(x => x.name));
   return par.getTop();
 }
 
-// var par = testParent();
-var x = testLoad(['171 26', '187 151', '118 176', '53 52', '129 33', '34 86', '13 1', '186 46',
+var t1 = ['1 2', '2 3', '3 4', '3 7', '4 5', '4 6', '7 8'];
+var t2 = ['1 2', '2 3', '2 4', '3 5', '3 6', '4 7', '4 8'];
+var t3 = ['1 2', '2 3', '3 4', '4 5', '5 6', '6 7', '7 8'];
+
+var t4 = ['0 1', '0 8', '0 15', '1 2', '1 5', '2 3', '2 4', '5 6', '5 7', '8 9', '8 12', '9 10', '9 11',
+'12 13', '12 14', '15 16', '15 19', '16 17', '16 18', '19 20', '19 21'];
+
+var t5 = ['171 26', '187 151', '118 176', '53 52', '129 33', '34 86', '13 1', '186 46',
 '30 62', '78 25', '177 146', '96 101', '155 71', '126 69', '152 127', '154 64', '13 190',
 '134 4', '70 41', '106 180', '144 17', '105 37', '181 163', '65 89', '101 34', '187 90',
 '16 177', '34 106', '152 59', '117 189', '85 2', '62 9', '12 93', '163 102', '158 191',
@@ -109,8 +103,10 @@ var x = testLoad(['171 26', '187 151', '118 176', '53 52', '129 33', '34 86', '1
 '129 47', '15 131', '124 44', '85 97', '71 29', '138 49', '78 159', '121 182', '126 80',
 '75 144', '147 88', '134 165', '144 87', '186 6', '42 5', '86 133', '72 118', '44 95',
 '16 66', '184 128', '40 174', '184 119', '156 65', '12 81', '136 82', '144 76', '186 168',
-'86 99', '78 96', '20 104']);
+'86 99', '78 96', '20 104'];
 
+[t1, t2, t3].map(testLoad);
 
+var x = testLoad(t4);
 
 //
