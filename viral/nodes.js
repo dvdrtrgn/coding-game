@@ -1,31 +1,34 @@
 //
 function dump(root, meth) {
-  var obj = (meth ? root[meth] : root);
-  var fun = (typeof obj === 'function');
-  var out = (fun ? obj() : obj);
+  var node = (meth ? root[meth] : root);
+  var fun = (typeof node === 'function');
+  var out = (fun ? node() : node);
   console.info([root.getId(), meth, out, out + '']);
 }
 
 function makeNode(name, parent) {
   var children = []
-  var obj = {
+  var node = {
     name: name,
+    get _array() {
+      return node.getChildren().map((obj) => obj._array);
+    },
+    get _children() {
+      return node.getChildren();
+    },
     get _parent() {
       return parent;
     },
-    get _children() {
-      return obj.getChildren().map((node) => node._children);
-    },
     add: function (kid) {
-      obj.addChild(kid);
-      kid.setParent(obj);
+      node.addChild(kid);
+      kid.setParent(node);
     },
     getId: () => name,
     getParent: () => parent,
-    setParent: (node) => (node !== obj) && (parent = node),
-    addChild: (node) => children.push(node),
+    setParent: (obj) => (obj !== node) && (parent = obj),
+    addChild: (obj) => children.push(obj),
     getChildren: () => children.slice(),
-    getTop: (parent = obj) => {
+    getTop: (parent = node) => {
       while (parent.getParent()) parent = parent.getParent();
       return parent;
     },
@@ -34,20 +37,20 @@ function makeNode(name, parent) {
       return out.length ? `+[${out}]` : '';
     },
     valueOf: () => ({
-      [name]: obj
+      [name]: node
     }),
     toString: function () {
-      return `«${name}»@${obj.getDepth()} ${obj.listChildren()}`;
+      return `«${name}»@${node.getDepth()} ${node.listChildren()}`;
     },
-    getDepth: function (depth = 0, parent = obj) {
+    getDepth: function (depth = 0, parent = node) {
       while (parent = parent.getParent()) depth++;
       return depth;
     },
   };
   if (parent) {
-    parent.addChild(obj);
+    parent.addChild(node);
   }
-  return obj;
+  return node;
 };
 
 function testParent() {
@@ -79,7 +82,7 @@ function testLoad(arr) {
     handlePair(par, kid);
   });
 
-  return IDX;
+  return IDX[1].getTop();
 }
 
 // var par = testParent();
