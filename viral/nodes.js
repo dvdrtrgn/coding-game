@@ -8,6 +8,7 @@ function dump(root, meth) {
 
 function makeNode(name, parent, children = []) {
   const TAB = '\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t';
+  var Index;
   var self = {
     name: name,
     get _array() {
@@ -49,6 +50,20 @@ function makeNode(name, parent, children = []) {
     getDepth: function (depth = 0, parent = self) {
       while (parent = parent.getParent()) depth++;
       return depth;
+    },
+    report: function (arr = []) {
+      Index = arr;
+      Index.push(self);
+      children.forEach(node => node.report(Index));
+    },
+    regenIndex: function () {
+      self.getTop().report();
+      Index.byId = function () {
+        var arr = [];
+        Index.forEach(o => arr[o.getId()] = o);
+        return arr;
+      };
+      return Index;
     },
   };
   if (parent) {
