@@ -1,15 +1,14 @@
 var Reach = (function () {
-  var Api, DATA, LIST, MAX, LOG;
+  var Api, DATA, LIST, MAX;
 
   function makeXsr(num) {
     return {
-      get: () => LIST[num],
+      get: () => LIST[num] = (LIST[num] || 1),
       set: (val) => LIST[num] = val,
     };
   }
 
   function process(par, kid) {
-    LOG.push(par + ' ' + kid);
     [par, kid] = [makeXsr(par), makeXsr(kid)];
 
     var depth = par.get() + 1;
@@ -17,14 +16,14 @@ var Reach = (function () {
     return depth;
   }
 
+  const parsi = parseInt;
   const processString = (str) => process.apply(0, str.split(' '));
-  const sort = (arr) => arr.sort((a, b) => parseInt(a) - parseInt(b));
+  const sort = (arr) => arr.slice().sort((a, b) => parsi(a) - parsi(b));
   const updateMax = (num) => MAX.set(Math.max(MAX.get(), num || 1));
 
   function init(data) {
-    DATA = data ? data.slice() : (DATA || []);
-    LOG = [];
-    LIST = Array(DATA.length + 1).fill(1);
+    DATA = data ? sort(data) : (DATA || []); // copy data
+    LIST = [];
     MAX = makeXsr(0);
     DATA.map(processString);
     return Api;
@@ -32,11 +31,8 @@ var Reach = (function () {
 
   Api = {
     'API': 'Reach',
-    readLog: () => LOG,
-    readList: () => LIST,
-    sortedLog: () => sort(LOG),
-    sortedData: () => sort(DATA),
-    sortedDepth: () => sort(LIST),
+    readData: () => DATA,
+    readDepths: () => LIST,
     init: init,
     get length() {
       return DATA.length;
@@ -51,15 +47,15 @@ var Reach = (function () {
 
 /*
 
-var n = parseInt(readline()); // the number of adjacency relations
+var N = parseInt(readline()); // the number of adjacency relations
 var DAT = [];
-for (var i = 0; i < n; i++) {
+for (var i = 0; i < N; i++) {
   DAT.push(readline());
 }
 
 Reach.init(DAT);
-printErr('Nums', n);
-printErr(Reach.readLog());
+printErr('Nums', N);
+printErr(Reach.readData());
 print(Reach.depth); // minimum steps to propagate the ad
 
 /*/
