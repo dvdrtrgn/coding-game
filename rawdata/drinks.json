@@ -1,0 +1,322 @@
+[
+  {
+    "Cocktail": "Bloody Mary",
+    "Parts": "9",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Bloody Mary",
+    "Parts": "18",
+    "Ingredient": "Tomato juice"
+  },
+  {
+    "Cocktail": "Bloody Mary",
+    "Parts": "3",
+    "Ingredient": "lemon juice"
+  },
+  {
+    "Cocktail": "Gin and Tonic",
+    "Parts": "12",
+    "Ingredient": "Gin"
+  },
+  {
+    "Cocktail": "Gin and Tonic",
+    "Parts": "29",
+    "Ingredient": "Tonic Water"
+  },
+  {
+    "Cocktail": "Screwdriver",
+    "Parts": "10",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Screwdriver",
+    "Parts": "20",
+    "Ingredient": "orange juice"
+  },
+  {
+    "Cocktail": "White Russian",
+    "Parts": "10",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "White Russian",
+    "Parts": "4",
+    "Ingredient": "coffee liqueur"
+  },
+  {
+    "Cocktail": "White Russian",
+    "Parts": "6",
+    "Ingredient": "cream"
+  },
+  {
+    "Cocktail": "Cosmopolitan",
+    "Parts": "8",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Cosmopolitan",
+    "Parts": "3",
+    "Ingredient": "cointreau"
+  },
+  {
+    "Cocktail": "Cosmopolitan",
+    "Parts": "3",
+    "Ingredient": "lime juice"
+  },
+  {
+    "Cocktail": "Cosmopolitan",
+    "Parts": "6",
+    "Ingredient": "cranberry juice"
+  },
+  {
+    "Cocktail": "Apple Martini",
+    "Parts": "8",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Apple Martini",
+    "Parts": "3",
+    "Ingredient": "apple schnapps"
+  },
+  {
+    "Cocktail": "Apple Martini",
+    "Parts": "3",
+    "Ingredient": "cointreau"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "3",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "3",
+    "Ingredient": "tequila"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "3",
+    "Ingredient": "rum"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "3",
+    "Ingredient": "triple sec"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "3",
+    "Ingredient": "Gin"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "5",
+    "Ingredient": "lemon juice"
+  },
+  {
+    "Cocktail": "Long Island Iced Tea",
+    "Parts": "6",
+    "Ingredient": "gomme syrup"
+  },
+  {
+    "Cocktail": "Mudslide",
+    "Parts": "6",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Mudslide",
+    "Parts": "6",
+    "Ingredient": "coffee liqueur"
+  },
+  {
+    "Cocktail": "Mudslide",
+    "Parts": "6",
+    "Ingredient": "bailey's"
+  },
+  {
+    "Cocktail": "Mudslide",
+    "Parts": "6",
+    "Ingredient": "cream"
+  },
+  {
+    "Cocktail": "Margarita",
+    "Parts": "7",
+    "Ingredient": "tequila"
+  },
+  {
+    "Cocktail": "Margarita",
+    "Parts": "4",
+    "Ingredient": "cointreau"
+  },
+  {
+    "Cocktail": "Margarita",
+    "Parts": "3",
+    "Ingredient": "lime juice"
+  },
+  {
+    "Cocktail": "Kamikaze",
+    "Parts": "6",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Kamikaze",
+    "Parts": "6",
+    "Ingredient": "triple sec"
+  },
+  {
+    "Cocktail": "Kamikaze",
+    "Parts": "6",
+    "Ingredient": "lime juice"
+  },
+  {
+    "Cocktail": "Mojito",
+    "Parts": "8",
+    "Ingredient": "rum"
+  },
+  {
+    "Cocktail": "Mojito",
+    "Parts": "6",
+    "Ingredient": "lime juice"
+  },
+  {
+    "Cocktail": "Mojito",
+    "Parts": "1",
+    "Ingredient": "sugar"
+  },
+  {
+    "Cocktail": "Mojito",
+    "Parts": "1",
+    "Ingredient": "mint"
+  },
+  {
+    "Cocktail": "Mojito",
+    "Parts": "12",
+    "Ingredient": "soda"
+  },
+  {
+    "Cocktail": "Caribou Lou",
+    "Parts": "6",
+    "Ingredient": "rum"
+  },
+  {
+    "Cocktail": "Caribou Lou",
+    "Parts": "3",
+    "Ingredient": "pineapple juice"
+  },
+  {
+    "Cocktail": "Cuba Libre",
+    "Parts": "12",
+    "Ingredient": "Cola"
+  },
+  {
+    "Cocktail": "Cuba Libre",
+    "Parts": "6",
+    "Ingredient": "rum"
+  },
+  {
+    "Cocktail": "Jager Monster",
+    "Parts": "9",
+    "Ingredient": "Jagermeister"
+  },
+  {
+    "Cocktail": "Jager Monster",
+    "Parts": "6",
+    "Ingredient": "orange juice"
+  },
+  {
+    "Cocktail": "Daiquiri",
+    "Parts": "9",
+    "Ingredient": "rum"
+  },
+  {
+    "Cocktail": "Daiquiri",
+    "Parts": "4",
+    "Ingredient": "lime juice"
+  },
+  {
+    "Cocktail": "Daiquiri",
+    "Parts": "1",
+    "Ingredient": "syrup"
+  },
+  {
+    "Cocktail": "Whiskey Sour",
+    "Parts": "3",
+    "Ingredient": "whiskey"
+  },
+  {
+    "Cocktail": "Whiskey Sour",
+    "Parts": "2",
+    "Ingredient": "lemon juice"
+  },
+  {
+    "Cocktail": "Whiskey Sour",
+    "Parts": "1",
+    "Ingredient": "syrup"
+  },
+  {
+    "Cocktail": "Mint Julep",
+    "Parts": "18",
+    "Ingredient": "whiskey"
+  },
+  {
+    "Cocktail": "Mint Julep",
+    "Parts": "1",
+    "Ingredient": "mint"
+  },
+  {
+    "Cocktail": "Mint Julep",
+    "Parts": "1",
+    "Ingredient": "sugar"
+  },
+  {
+    "Cocktail": "Pina Colada",
+    "Parts": "6",
+    "Ingredient": "rum"
+  },
+  {
+    "Cocktail": "Pina Colada",
+    "Parts": "6",
+    "Ingredient": "cream"
+  },
+  {
+    "Cocktail": "Pina Colada",
+    "Parts": "6",
+    "Ingredient": "pineapple juice"
+  },
+  {
+    "Cocktail": "Sex on the Beach",
+    "Parts": "8",
+    "Ingredient": "vodka"
+  },
+  {
+    "Cocktail": "Sex on the Beach",
+    "Parts": "4",
+    "Ingredient": "peach schnapps"
+  },
+  {
+    "Cocktail": "Sex on the Beach",
+    "Parts": "8",
+    "Ingredient": "orange juice"
+  },
+  {
+    "Cocktail": "Sex on the Beach",
+    "Parts": "8",
+    "Ingredient": "cranberry juice"
+  },
+  {
+    "Cocktail": "B-52",
+    "Parts": "4",
+    "Ingredient": "coffee liqueur"
+  },
+  {
+    "Cocktail": "B-52",
+    "Parts": "4",
+    "Ingredient": "bailey's"
+  },
+  {
+    "Cocktail": "B-52",
+    "Parts": "4",
+    "Ingredient": "cointreau"
+  }
+]

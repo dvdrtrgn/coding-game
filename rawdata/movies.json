@@ -1,0 +1,184 @@
+[
+  {
+    "Movie": "Avatar",
+    "Genre": "Action",
+    "Production Budget": "425000000",
+    "Total Domestic Box Office": "760507625",
+    "Rating IMDB": " 8.0"
+  },
+  {
+    "Movie": "The Blind Side",
+    "Genre": "Drama",
+    "Production Budget": "35000000",
+    "Total Domestic Box Office": "255959475",
+    "Rating IMDB": " 7.6"
+  },
+  {
+    "Movie": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "Genre": "Adventure",
+    "Production Budget": "180000000",
+    "Total Domestic Box Office": "291710957",
+    "Rating IMDB": " 6.9"
+  },
+  {
+    "Movie": "The Dark Knight",
+    "Genre": "Action",
+    "Production Budget": "185000000",
+    "Total Domestic Box Office": "533345358",
+    "Rating IMDB": " 9.0"
+  },
+  {
+    "Movie": "ET: The Extra-Terrestrial",
+    "Genre": "Drama",
+    "Production Budget": "10500000",
+    "Total Domestic Box Office": "435110554",
+    "Rating IMDB": " 7.9"
+  },
+  {
+    "Movie": "Finding Nemo",
+    "Genre": "Adventure",
+    "Production Budget": "94000000",
+    "Total Domestic Box Office": "380529370",
+    "Rating IMDB": " 8.1"
+  },
+  {
+    "Movie": "Ghostbusters",
+    "Genre": "Comedy",
+    "Production Budget": "30000000",
+    "Total Domestic Box Office": "238632124",
+    "Rating IMDB": " 7.8"
+  },
+  {
+    "Movie": "The Hunger Games",
+    "Genre": "Thriller/Suspense",
+    "Production Budget": "80000000",
+    "Total Domestic Box Office": "408010692",
+    "Rating IMDB": " 7.2"
+  },
+  {
+    "Movie": "Iron Man 3",
+    "Genre": "Action",
+    "Production Budget": "200000000",
+    "Total Domestic Box Office": "396702239",
+    "Rating IMDB": " 7.6"
+  },
+  {
+    "Movie": "Jurassic Park",
+    "Genre": "Action",
+    "Production Budget": "63000000",
+    "Total Domestic Box Office": "395708305",
+    "Rating IMDB": " 8.0"
+  },
+  {
+    "Movie": "King Kong",
+    "Genre": "Adventure",
+    "Production Budget": "207000000",
+    "Total Domestic Box Office": "218080025",
+    "Rating IMDB": " 7.3"
+  },
+  {
+    "Movie": "The Lion King",
+    "Genre": "Adventure",
+    "Production Budget": "79300000",
+    "Total Domestic Box Office": "422780140",
+    "Rating IMDB": " 8.4"
+  },
+  {
+    "Movie": "Monsters, Inc.",
+    "Genre": "Adventure",
+    "Production Budget": "115000000",
+    "Total Domestic Box Office": "289423425",
+    "Rating IMDB": " 8.0"
+  },
+  {
+    "Movie": "The Twilight Saga: New Moon",
+    "Genre": "Drama",
+    "Production Budget": "50000000",
+    "Total Domestic Box Office": "296623634",
+    "Rating IMDB": " 4.5"
+  },
+  {
+    "Movie": "Oz the Great and Powerful",
+    "Genre": "Adventure",
+    "Production Budget": "200000000",
+    "Total Domestic Box Office": "233671832",
+    "Rating IMDB": " 6.6"
+  },
+  {
+    "Movie": "Pirates of the Caribbean: Dead Man's Chest",
+    "Genre": "Adventure",
+    "Production Budget": "225000000",
+    "Total Domestic Box Office": "423315812",
+    "Rating IMDB": " 7.3"
+  },
+  {
+    "Movie": "Quantum of Solace",
+    "Genre": "Action",
+    "Production Budget": "230000000",
+    "Total Domestic Box Office": "169368427",
+    "Rating IMDB": " 6.7"
+  },
+  {
+    "Movie": "Raiders of the Lost Ark",
+    "Genre": "Adventure",
+    "Production Budget": "20000000",
+    "Total Domestic Box Office": "248159971",
+    "Rating IMDB": " 8.7"
+  },
+  {
+    "Movie": "Star Wars Ep. I: The Phantom Menace",
+    "Genre": "Adventure",
+    "Production Budget": "115000000",
+    "Total Domestic Box Office": "474544677",
+    "Rating IMDB": " 6.5"
+  },
+  {
+    "Movie": "Titanic",
+    "Genre": "Thriller/Suspense",
+    "Production Budget": "200000000",
+    "Total Domestic Box Office": "658672302",
+    "Rating IMDB": " 7.6"
+  },
+  {
+    "Movie": "Up",
+    "Genre": "Adventure",
+    "Production Budget": "175000000",
+    "Total Domestic Box Office": "293004164",
+    "Rating IMDB": " 8.3"
+  },
+  {
+    "Movie": "The Vow",
+    "Genre": "Drama",
+    "Production Budget": "30000000",
+    "Total Domestic Box Office": "125014030",
+    "Rating IMDB": " 6.7"
+  },
+  {
+    "Movie": "The War of the Worlds",
+    "Genre": "Action",
+    "Production Budget": "132000000",
+    "Total Domestic Box Office": "234280354",
+    "Rating IMDB": " 6.5"
+  },
+  {
+    "Movie": "X-Men: The Last Stand",
+    "Genre": "Action",
+    "Production Budget": "210000000",
+    "Total Domestic Box Office": "234362462",
+    "Rating IMDB": " 6.8"
+  },
+  {
+    "Movie": "You've Got Mail",
+    "Genre": "Drama",
+    "Production Budget": "65000000",
+    "Total Domestic Box Office": "115821495",
+    "Rating IMDB": " 6.3"
+  },
+  {
+    "Movie": "Zookeeper",
+    "Genre": "Romantic Comedy",
+    "Production Budget": "80000000",
+    "Total Domestic Box Office": "80360866",
+    "Rating IMDB": " 5.0"
+  }
+]

@@ -1,0 +1,2482 @@
+[
+  {
+    "Year": "1980",
+    "Media": "8-track",
+    "Market Share": "14.3"
+  },
+  {
+    "Year": "1981",
+    "Media": "8-track",
+    "Market Share": "7.9"
+  },
+  {
+    "Year": "1982",
+    "Media": "8-track",
+    "Market Share": "1.0"
+  },
+  {
+    "Year": "1983",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2005",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2006",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2007",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "8-track",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1980",
+    "Media": "Cassete",
+    "Market Share": "19.1"
+  },
+  {
+    "Year": "1981",
+    "Media": "Cassete",
+    "Market Share": "26.7"
+  },
+  {
+    "Year": "1982",
+    "Media": "Cassete",
+    "Market Share": "38.2"
+  },
+  {
+    "Year": "1983",
+    "Media": "Cassete",
+    "Market Share": "47.8"
+  },
+  {
+    "Year": "1984",
+    "Media": "Cassete",
+    "Market Share": "55"
+  },
+  {
+    "Year": "1985",
+    "Media": "Cassete",
+    "Market Share": "55.3"
+  },
+  {
+    "Year": "1986",
+    "Media": "Cassete",
+    "Market Share": "53.9"
+  },
+  {
+    "Year": "1987",
+    "Media": "Cassete",
+    "Market Share": "53.2"
+  },
+  {
+    "Year": "1988",
+    "Media": "Cassete",
+    "Market Share": "54.1"
+  },
+  {
+    "Year": "1989",
+    "Media": "Cassete",
+    "Market Share": "50.8"
+  },
+  {
+    "Year": "1990",
+    "Media": "Cassete",
+    "Market Share": "46"
+  },
+  {
+    "Year": "1991",
+    "Media": "Cassete",
+    "Market Share": "38.5"
+  },
+  {
+    "Year": "1992",
+    "Media": "Cassete",
+    "Market Share": "34.5"
+  },
+  {
+    "Year": "1993",
+    "Media": "Cassete",
+    "Market Share": "29"
+  },
+  {
+    "Year": "1994",
+    "Media": "Cassete",
+    "Market Share": "24.7"
+  },
+  {
+    "Year": "1995",
+    "Media": "Cassete",
+    "Market Share": "18.7"
+  },
+  {
+    "Year": "1996",
+    "Media": "Cassete",
+    "Market Share": "15.2"
+  },
+  {
+    "Year": "1997",
+    "Media": "Cassete",
+    "Market Share": "12.4"
+  },
+  {
+    "Year": "1998",
+    "Media": "Cassete",
+    "Market Share": "7.3"
+  },
+  {
+    "Year": "1999",
+    "Media": "Cassete",
+    "Market Share": "7.3"
+  },
+  {
+    "Year": "2000",
+    "Media": "Cassete",
+    "Market Share": "4.4"
+  },
+  {
+    "Year": "2001",
+    "Media": "Cassete",
+    "Market Share": "2.6"
+  },
+  {
+    "Year": "2002",
+    "Media": "Cassete",
+    "Market Share": "1.7"
+  },
+  {
+    "Year": "2003",
+    "Media": "Cassete",
+    "Market Share": "0.9"
+  },
+  {
+    "Year": "2004",
+    "Media": "Cassete",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2005",
+    "Media": "Cassete",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "Cassete",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2007",
+    "Media": "Cassete",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "Cassete",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "Cassete",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "Cassete",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1980",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Cassete single",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "1988",
+    "Media": "Cassete single",
+    "Market Share": "0.9"
+  },
+  {
+    "Year": "1989",
+    "Media": "Cassete single",
+    "Market Share": "3"
+  },
+  {
+    "Year": "1990",
+    "Media": "Cassete single",
+    "Market Share": "3.4"
+  },
+  {
+    "Year": "1991",
+    "Media": "Cassete single",
+    "Market Share": "2.9"
+  },
+  {
+    "Year": "1992",
+    "Media": "Cassete single",
+    "Market Share": "3.3"
+  },
+  {
+    "Year": "1993",
+    "Media": "Cassete single",
+    "Market Share": "3"
+  },
+  {
+    "Year": "1994",
+    "Media": "Cassete single",
+    "Market Share": "2.3"
+  },
+  {
+    "Year": "1995",
+    "Media": "Cassete single",
+    "Market Share": "1.9"
+  },
+  {
+    "Year": "1996",
+    "Media": "Cassete single",
+    "Market Share": "1.5"
+  },
+  {
+    "Year": "1997",
+    "Media": "Cassete single",
+    "Market Share": "1.1"
+  },
+  {
+    "Year": "1998",
+    "Media": "Cassete single",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "1999",
+    "Media": "Cassete single",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "2000",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2005",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2006",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2007",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "Cassete single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1980",
+    "Media": "CD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "CD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "CD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "CD",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "1984",
+    "Media": "CD",
+    "Market Share": "2.4"
+  },
+  {
+    "Year": "1985",
+    "Media": "CD",
+    "Market Share": "8.9"
+  },
+  {
+    "Year": "1986",
+    "Media": "CD",
+    "Market Share": "20"
+  },
+  {
+    "Year": "1987",
+    "Media": "CD",
+    "Market Share": "28.5"
+  },
+  {
+    "Year": "1988",
+    "Media": "CD",
+    "Market Share": "33.4"
+  },
+  {
+    "Year": "1989",
+    "Media": "CD",
+    "Market Share": "39.3"
+  },
+  {
+    "Year": "1990",
+    "Media": "CD",
+    "Market Share": "45.8"
+  },
+  {
+    "Year": "1991",
+    "Media": "CD",
+    "Market Share": "55.5"
+  },
+  {
+    "Year": "1992",
+    "Media": "CD",
+    "Market Share": "59.2"
+  },
+  {
+    "Year": "1993",
+    "Media": "CD",
+    "Market Share": "64.8"
+  },
+  {
+    "Year": "1994",
+    "Media": "CD",
+    "Market Share": "70.1"
+  },
+  {
+    "Year": "1995",
+    "Media": "CD",
+    "Market Share": "76.1"
+  },
+  {
+    "Year": "1996",
+    "Media": "CD",
+    "Market Share": "79.2"
+  },
+  {
+    "Year": "1997",
+    "Media": "CD",
+    "Market Share": "81.1"
+  },
+  {
+    "Year": "1998",
+    "Media": "CD",
+    "Market Share": "87.9"
+  },
+  {
+    "Year": "1999",
+    "Media": "CD",
+    "Market Share": "87.9"
+  },
+  {
+    "Year": "2000",
+    "Media": "CD",
+    "Market Share": "92.3"
+  },
+  {
+    "Year": "2001",
+    "Media": "CD",
+    "Market Share": "94"
+  },
+  {
+    "Year": "2002",
+    "Media": "CD",
+    "Market Share": "95.3"
+  },
+  {
+    "Year": "2003",
+    "Media": "CD",
+    "Market Share": "94.7"
+  },
+  {
+    "Year": "2004",
+    "Media": "CD",
+    "Market Share": "92.7"
+  },
+  {
+    "Year": "2005",
+    "Media": "CD",
+    "Market Share": "85.6"
+  },
+  {
+    "Year": "2006",
+    "Media": "CD",
+    "Market Share": "79.7"
+  },
+  {
+    "Year": "2007",
+    "Media": "CD",
+    "Market Share": "70"
+  },
+  {
+    "Year": "2008",
+    "Media": "CD",
+    "Market Share": "62.4"
+  },
+  {
+    "Year": "2009",
+    "Media": "CD",
+    "Market Share": "55.6"
+  },
+  {
+    "Year": "2010",
+    "Media": "CD",
+    "Market Share": "49.1"
+  },
+  {
+    "Year": "1980",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "CD single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "1989",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "CD single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "1991",
+    "Media": "CD single",
+    "Market Share": "0.4"
+  },
+  {
+    "Year": "1992",
+    "Media": "CD single",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "1993",
+    "Media": "CD single",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "1994",
+    "Media": "CD single",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "1995",
+    "Media": "CD single",
+    "Market Share": "0.9"
+  },
+  {
+    "Year": "1996",
+    "Media": "CD single",
+    "Market Share": "1.5"
+  },
+  {
+    "Year": "1997",
+    "Media": "CD single",
+    "Market Share": "2.2"
+  },
+  {
+    "Year": "1998",
+    "Media": "CD single",
+    "Market Share": "1.5"
+  },
+  {
+    "Year": "1999",
+    "Media": "CD single",
+    "Market Share": "1.5"
+  },
+  {
+    "Year": "2000",
+    "Media": "CD single",
+    "Market Share": "1"
+  },
+  {
+    "Year": "2001",
+    "Media": "CD single",
+    "Market Share": "0.6"
+  },
+  {
+    "Year": "2002",
+    "Media": "CD single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2003",
+    "Media": "CD single",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "2004",
+    "Media": "CD single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2005",
+    "Media": "CD single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "CD single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2007",
+    "Media": "CD single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2008",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "CD single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1980",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Download Album",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Download Album",
+    "Market Share": "0.4"
+  },
+  {
+    "Year": "2005",
+    "Media": "Download Album",
+    "Market Share": "1.2"
+  },
+  {
+    "Year": "2006",
+    "Media": "Download Album",
+    "Market Share": "2.5"
+  },
+  {
+    "Year": "2007",
+    "Media": "Download Album",
+    "Market Share": "4.9"
+  },
+  {
+    "Year": "2008",
+    "Media": "Download Album",
+    "Market Share": "7.9"
+  },
+  {
+    "Year": "2009",
+    "Media": "Download Album",
+    "Market Share": "11"
+  },
+  {
+    "Year": "2010",
+    "Media": "Download Album",
+    "Market Share": "14.8"
+  },
+  {
+    "Year": "1980",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2005",
+    "Media": "Download Music Video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2006",
+    "Media": "Download Music Video",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2007",
+    "Media": "Download Music Video",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "2008",
+    "Media": "Download Music Video",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "2009",
+    "Media": "Download Music Video",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "2010",
+    "Media": "Download Music Video",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "1980",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Download Single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Download Single",
+    "Market Share": "1.1"
+  },
+  {
+    "Year": "2005",
+    "Media": "Download Single",
+    "Market Share": "3.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "Download Single",
+    "Market Share": "5.1"
+  },
+  {
+    "Year": "2007",
+    "Media": "Download Single",
+    "Market Share": "7.8"
+  },
+  {
+    "Year": "2008",
+    "Media": "Download Single",
+    "Market Share": "12.5"
+  },
+  {
+    "Year": "2009",
+    "Media": "Download Single",
+    "Market Share": "16.9"
+  },
+  {
+    "Year": "2010",
+    "Media": "Download Single",
+    "Market Share": "21"
+  },
+  {
+    "Year": "1980",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "DVD Audio",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2003",
+    "Media": "DVD Audio",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2004",
+    "Media": "DVD Audio",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2005",
+    "Media": "DVD Audio",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2007",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "DVD Audio",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1980",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2005",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2006",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2007",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "Kiosk",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "Kiosk",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2010",
+    "Media": "Kiosk",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "1980",
+    "Media": "LP/EP",
+    "Market Share": "59.8"
+  },
+  {
+    "Year": "1981",
+    "Media": "LP/EP",
+    "Market Share": "58.9"
+  },
+  {
+    "Year": "1982",
+    "Media": "LP/EP",
+    "Market Share": "53.1"
+  },
+  {
+    "Year": "1983",
+    "Media": "LP/EP",
+    "Market Share": "44.6"
+  },
+  {
+    "Year": "1984",
+    "Media": "LP/EP",
+    "Market Share": "35.7"
+  },
+  {
+    "Year": "1985",
+    "Media": "LP/EP",
+    "Market Share": "29.4"
+  },
+  {
+    "Year": "1986",
+    "Media": "LP/EP",
+    "Market Share": "21.2"
+  },
+  {
+    "Year": "1987",
+    "Media": "LP/EP",
+    "Market Share": "14.3"
+  },
+  {
+    "Year": "1988",
+    "Media": "LP/EP",
+    "Market Share": "8.5"
+  },
+  {
+    "Year": "1989",
+    "Media": "LP/EP",
+    "Market Share": "3.3"
+  },
+  {
+    "Year": "1990",
+    "Media": "LP/EP",
+    "Market Share": "1.1"
+  },
+  {
+    "Year": "1991",
+    "Media": "LP/EP",
+    "Market Share": "0.4"
+  },
+  {
+    "Year": "1992",
+    "Media": "LP/EP",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "1993",
+    "Media": "LP/EP",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "1994",
+    "Media": "LP/EP",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "1995",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "1996",
+    "Media": "LP/EP",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "1997",
+    "Media": "LP/EP",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "1998",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "1999",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2000",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2001",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2002",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2003",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2004",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2005",
+    "Media": "LP/EP",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "LP/EP",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2007",
+    "Media": "LP/EP",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2008",
+    "Media": "LP/EP",
+    "Market Share": "0.6"
+  },
+  {
+    "Year": "2009",
+    "Media": "LP/EP",
+    "Market Share": "0.8"
+  },
+  {
+    "Year": "2010",
+    "Media": "LP/EP",
+    "Market Share": "1.3"
+  },
+  {
+    "Year": "1980",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Mobile",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2005",
+    "Media": "Mobile",
+    "Market Share": "3.4"
+  },
+  {
+    "Year": "2006",
+    "Media": "Mobile",
+    "Market Share": "6.6"
+  },
+  {
+    "Year": "2007",
+    "Media": "Mobile",
+    "Market Share": "9.9"
+  },
+  {
+    "Year": "2008",
+    "Media": "Mobile",
+    "Market Share": "11.1"
+  },
+  {
+    "Year": "2009",
+    "Media": "Mobile",
+    "Market Share": "9.5"
+  },
+  {
+    "Year": "2010",
+    "Media": "Mobile",
+    "Market Share": "7.7"
+  },
+  {
+    "Year": "1980",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Music video",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Music video",
+    "Market Share": "1.8"
+  },
+  {
+    "Year": "1990",
+    "Media": "Music video",
+    "Market Share": "2.3"
+  },
+  {
+    "Year": "1991",
+    "Media": "Music video",
+    "Market Share": "1.5"
+  },
+  {
+    "Year": "1992",
+    "Media": "Music video",
+    "Market Share": "1.7"
+  },
+  {
+    "Year": "1993",
+    "Media": "Music video",
+    "Market Share": "2.1"
+  },
+  {
+    "Year": "1994",
+    "Media": "Music video",
+    "Market Share": "1.9"
+  },
+  {
+    "Year": "1995",
+    "Media": "Music video",
+    "Market Share": "1.8"
+  },
+  {
+    "Year": "1996",
+    "Media": "Music video",
+    "Market Share": "1.9"
+  },
+  {
+    "Year": "1997",
+    "Media": "Music video",
+    "Market Share": "2.6"
+  },
+  {
+    "Year": "1998",
+    "Media": "Music video",
+    "Market Share": "2.6"
+  },
+  {
+    "Year": "1999",
+    "Media": "Music video",
+    "Market Share": "2.6"
+  },
+  {
+    "Year": "2000",
+    "Media": "Music video",
+    "Market Share": "2.0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Music video",
+    "Market Share": "2.4"
+  },
+  {
+    "Year": "2002",
+    "Media": "Music video",
+    "Market Share": "2.3"
+  },
+  {
+    "Year": "2003",
+    "Media": "Music video",
+    "Market Share": "3.4"
+  },
+  {
+    "Year": "2004",
+    "Media": "Music video",
+    "Market Share": "4.9"
+  },
+  {
+    "Year": "2005",
+    "Media": "Music video",
+    "Market Share": "4.9"
+  },
+  {
+    "Year": "2006",
+    "Media": "Music video",
+    "Market Share": "3.8"
+  },
+  {
+    "Year": "2007",
+    "Media": "Music video",
+    "Market Share": "4.6"
+  },
+  {
+    "Year": "2008",
+    "Media": "Music video",
+    "Market Share": "2.5"
+  },
+  {
+    "Year": "2009",
+    "Media": "Music video",
+    "Market Share": "2.8"
+  },
+  {
+    "Year": "2010",
+    "Media": "Music video",
+    "Market Share": "2.6"
+  },
+  {
+    "Year": "1980",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "SACD",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2004",
+    "Media": "SACD",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2005",
+    "Media": "SACD",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2007",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "SACD",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1980",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1981",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1982",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1983",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1984",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1985",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1986",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1987",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1988",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1989",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1990",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1991",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1992",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1993",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1994",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1995",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1996",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1997",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1998",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "1999",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2000",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2001",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2002",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2003",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2004",
+    "Media": "Subscription",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2005",
+    "Media": "Subscription",
+    "Market Share": "1.2"
+  },
+  {
+    "Year": "2006",
+    "Media": "Subscription",
+    "Market Share": "1.8"
+  },
+  {
+    "Year": "2007",
+    "Media": "Subscription",
+    "Market Share": "2.2"
+  },
+  {
+    "Year": "2008",
+    "Media": "Subscription",
+    "Market Share": "2.5"
+  },
+  {
+    "Year": "2009",
+    "Media": "Subscription",
+    "Market Share": "2.8"
+  },
+  {
+    "Year": "2010",
+    "Media": "Subscription",
+    "Market Share": "2.9"
+  },
+  {
+    "Year": "1980",
+    "Media": "vinyl single",
+    "Market Share": "6.8"
+  },
+  {
+    "Year": "1981",
+    "Media": "vinyl single",
+    "Market Share": "6.5"
+  },
+  {
+    "Year": "1982",
+    "Media": "vinyl single",
+    "Market Share": "7.7"
+  },
+  {
+    "Year": "1983",
+    "Media": "vinyl single",
+    "Market Share": "7.1"
+  },
+  {
+    "Year": "1984",
+    "Media": "vinyl single",
+    "Market Share": "6.9"
+  },
+  {
+    "Year": "1985",
+    "Media": "vinyl single",
+    "Market Share": "6.4"
+  },
+  {
+    "Year": "1986",
+    "Media": "vinyl single",
+    "Market Share": "4.9"
+  },
+  {
+    "Year": "1987",
+    "Media": "vinyl single",
+    "Market Share": "3.7"
+  },
+  {
+    "Year": "1988",
+    "Media": "vinyl single",
+    "Market Share": "2.9"
+  },
+  {
+    "Year": "1989",
+    "Media": "vinyl single",
+    "Market Share": "1.8"
+  },
+  {
+    "Year": "1990",
+    "Media": "vinyl single",
+    "Market Share": "1.3"
+  },
+  {
+    "Year": "1991",
+    "Media": "vinyl single",
+    "Market Share": "0.8"
+  },
+  {
+    "Year": "1992",
+    "Media": "vinyl single",
+    "Market Share": "0.7"
+  },
+  {
+    "Year": "1993",
+    "Media": "vinyl single",
+    "Market Share": "0.5"
+  },
+  {
+    "Year": "1994",
+    "Media": "vinyl single",
+    "Market Share": "0.4"
+  },
+  {
+    "Year": "1995",
+    "Media": "vinyl single",
+    "Market Share": "0.4"
+  },
+  {
+    "Year": "1996",
+    "Media": "vinyl single",
+    "Market Share": "0.4"
+  },
+  {
+    "Year": "1997",
+    "Media": "vinyl single",
+    "Market Share": "0.3"
+  },
+  {
+    "Year": "1998",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "1999",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2000",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2001",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2002",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2003",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2004",
+    "Media": "vinyl single",
+    "Market Share": "0.2"
+  },
+  {
+    "Year": "2005",
+    "Media": "vinyl single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2006",
+    "Media": "vinyl single",
+    "Market Share": "0.1"
+  },
+  {
+    "Year": "2007",
+    "Media": "vinyl single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2008",
+    "Media": "vinyl single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2009",
+    "Media": "vinyl single",
+    "Market Share": "0"
+  },
+  {
+    "Year": "2010",
+    "Media": "vinyl single",
+    "Market Share": "0"
+  }
+]
