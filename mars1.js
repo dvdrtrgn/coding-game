@@ -1,19 +1,35 @@
-var surfaceN = parseInt(readline()); // points used to draw the surface of Mars.
+var prerr = function (...arr) {
+  printErr(arr.map(a => a.join && a.join(':') || a).join(' | '));
+};
+var R = () => readline().split(' ');
+var RN = () => R().map(Number);
 
-for (var i = 0; i < surfaceN; i++) {
-  var [landX, landY] = readline().split(' ').map(parseInt);
-  // X coordinate of a surface point. (0 to 6999)
-  // Y coordinate of a surface point.
-  // By linking all the points together in a sequential fashion, you form the surface
+// X/Y coordinates used to draw the surface
+var POINTS = Array(RN().pop()).fill().map(RN);
+
+function x2alt(x) {
+  var rez = POINTS.reduce((a, b) => (x > a[0]) ? a : b);
+  return rez[1];
 }
-var v = -1;
-// game loop
-while (true) {
-  var [X, Y, hSpeed, vSpeed, fuel, rotate, power] = readline().split(' ').map(parseInt);
-  // H/V speed (±m/s) & fuel in liters & rotation(±90°) & thrust (0 to 4)
 
-  // 2 integers: "rotate power".
-  // rotate is the desired rotation angle (should be 0 for level 1),
-  // power is the desired thrust power (0 to 4).
-  print('0 ' + Math.min(((v += 0.24) | 0), 4));
+function sp2pow(speed, dist, adj = 9) {
+  var kms = dist / 1000;
+  var mag = Math.round((kms * adj + speed) / -adj);
+  var pow = Math.min(Math.max(mag, 0), 4);
+  prerr('sp2pow', [speed, dist], [mag, pow]);
+  return pow;
+}
+
+// game loop
+landY = '';
+
+while (true) {
+  var [X, Y, hMps, vMps, fuel, rotate, power] = RN();
+  // H/V speed(±m/s) & fuel(liters) & rotation(±90°) & thrust(0–4 Lps)
+  prerr(['xy', X, Y], [hMps, vMps], ['gas', fuel], [rotate, power]);
+  landY = landY || x2alt(X);
+
+  var dist = (Y - landY);
+  print('0 ' + sp2pow(vMps, dist)); // [[rotation] [power]]
+  //print('0 ' + vMps < -39 ? '4' : '0');
 }
