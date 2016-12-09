@@ -1,0 +1,11 @@
+talk it thru
+
+how do i measure the shortest propagation?
+  brute force?
+  strategy?
+  formula?
+
+
+make a way of outputting a chart
+
+
