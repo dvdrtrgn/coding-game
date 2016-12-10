@@ -9,3 +9,51 @@ how do i measure the shortest propagation?
 make a way of outputting a chart
 
 
+
+
+node =
+string: id
+array: children collection
+ref: parent awareness
+
+functions
+  getParent
+  gettop
+    getParent until error
+  self indexing
+    gettop and scan down
+  make map
+    ask for child list
+  addChild
+    notifies child upon adding
+
+
+// array [index to contents]
+var arr = [
+ {}, // 0
+ {}, // 1
+ {}, // 2
+ {}, // 3
+ {}, // 4
+ {}, // 5
+ {}, // 6
+ {}, // 7
+ {}, // 8
+];
+
+// object [table of contents]
+var obj = {
+  1: {
+    2: {
+      3: {
+        4: {
+          5: {},
+          6: {},
+        },
+        7: {
+          8: {},
+        },
+      },
+    },
+  },
+};
