@@ -1,11 +1,16 @@
 var Reach = (function () {
   var Api, DATA, LIST, MAX;
+  var XSR = [];
 
   function makeXsr(num) {
-    return {
+    if (XSR[num]) return XSR[num];
+    XSR[num] = {
+      nom: num,
       get: () => LIST[num] = (LIST[num] || 1),
       set: (val) => LIST[num] = val,
     };
+    console.log(num, XSR[num]);
+    return XSR[num];
   }
 
   function process(par, kid) {
@@ -24,7 +29,7 @@ var Reach = (function () {
   function init(data) {
     DATA = data ? sort(data) : (DATA || []); // copy data
     LIST = [];
-    MAX = makeXsr(0);
+    MAX = makeXsr('_max_');
     DATA.map(processString);
     return Api;
   }
@@ -63,14 +68,15 @@ print(Reach.depth); // minimum steps to propagate the ad
 function test(data) {
   Reach.init(data);
   console.info(Reach);
-  return ['D' + Reach.depth, 'L' + Reach.length].join('/');
+  return ['Depth ' + Reach.depth, 'Length ' + Reach.length].join(' / ');
 }
 
 var D = require('./_data');
 
 console.clear && console.clear();
-[D.t1, D.t2, D.t3, D.t4, D.t10].map(test);
-
+//var z = [D.t0, D.t1, D.t2, D.t3, D.t4, D.t10].map(test);
+var z = test(D.t10);
+console.log(z);
 
 
 //
